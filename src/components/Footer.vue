@@ -20,7 +20,7 @@ export default {
 }
 @media (max-width: 350px) {
   .footer {
-    padding: 15px;
+    padding: 10px;
   }
 }
 </style>

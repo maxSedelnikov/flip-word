@@ -52,5 +52,9 @@ li span {
   h3 {
     font-size: 1.5rem;
   }
+  p,
+  span {
+    font-size: 0.9rem;
+  }
 }
 </style>
