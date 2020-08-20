@@ -26,7 +26,7 @@ export default {
 }
 @media (max-width: 350px) {
   .home-title {
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
     font-size: 2.1rem;
   }
 }

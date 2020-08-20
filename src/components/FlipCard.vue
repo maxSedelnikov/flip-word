@@ -151,23 +151,9 @@ export default {
   .flip-card__wrap {
     min-height: 240px;
   }
-  .flip-card__wrap .container {
-    flex-direction: column;
-    position: relative;
-  }
   .flip-card__wrap >>> .flip-card__item {
     width: 200px !important;
     height: 200px !important;
-  }
-  .btn {
-    position: absolute;
-    bottom: -70px;
-  }
-  .btn.prev {
-    left: 50px;
-  }
-  .btn.next {
-    right: 50px;
   }
 }
 </style>

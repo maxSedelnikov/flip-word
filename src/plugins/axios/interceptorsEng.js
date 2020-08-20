@@ -20,7 +20,7 @@ function setParams(config) {
     minDictionaryCount: 1,
     maxDictionaryCount: -1,
     minLength: 5,
-    maxLength: -1,
+    maxLength: 15,
     api_key: process.env.VUE_APP_API_WORD_KEY,
   });
 
