@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "flip-the-word" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/flip-word/" : "/",
 };
