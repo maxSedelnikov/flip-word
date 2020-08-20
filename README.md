@@ -1,6 +1,6 @@
 # flipcards
 
-[DEMO](https://maxsedelnikov.github.io/flip-word/).
+[DEMO](https://maxsedelnikov.github.io/flip-word/)
 
 ## Project setup
 
