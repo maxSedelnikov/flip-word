@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <section class="home">
+    <h1 class="home-title">Flip The Word</h1>
+    <FlipCard :list="wordsList" :index="currentIndex" />
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { mapGetters } from "vuex";
+import FlipCard from "../components/FlipCard";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  components: { FlipCard },
+  data: () => ({}),
+  computed: {
+    ...mapGetters("words", ["wordsList", "currentIndex"])
   }
 };
 </script>
+
+<style scoped>
+.home-title {
+  margin: 0;
+  padding: 1rem 0;
+}
+@media (max-width: 350px) {
+  .home-title {
+    padding-bottom: 0.5rem;
+    font-size: 2.1rem;
+  }
+}
+</style>

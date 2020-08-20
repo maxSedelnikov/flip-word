@@ -1,32 +1,45 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Notification />
+    <Header />
+    <Main />
+    <Footer />
   </div>
 </template>
 
+<script>
+import Notification from "./components/Notification";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+
+export default {
+  name: "App",
+  components: { Notification, Header, Main, Footer }
+};
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
-
-#nav {
-  padding: 30px;
+@media (min-height: 451px) {
+  #app {
+    height: 100vh;
+  }
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+@media (max-width: 350px) {
+  h1 {
+    font-size: 2.1rem;
+  }
 }
 </style>
